@@ -1,8 +1,11 @@
-const simpleGit = require("simple-git");
-const git = simpleGit.default();
+import chalk from 'chalk';
+import simpleGit from 'simple-git';
+
+const git = simpleGit();
 
 async function autoCommitFunc() {
    const message = process.argv.slice(4).join(" ") || "General Edits on Current Branch";
+   let messagePrefix;
 
    switch(process.argv.slice(2)[0]){
       case 'fix':
