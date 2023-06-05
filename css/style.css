@@ -134,3 +134,23 @@ body {
    color: var(--very-dark-cyan);
 }
 /* ================================================================= */
+
+@media (min-width: 40em){
+   .main__container {
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+      max-width: 70%;
+   }
+   .section {
+      padding: 2em;
+   }
+   .section__sedans {
+      border-radius: .5em 0 0 .5em;
+   }
+   .section__luxury {
+      border-radius: 0 .5em .5em 0;
+   }
+   .button {
+      margin: 4em 1em 1em 1em;
+   }
+}
