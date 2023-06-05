@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/davidochoadev/3-column-preview-card-component-solution/issues"
   },
-  "homepage": "https://github.com/davidochoadev/3-column-preview-card-component-solution#readme"
+  "homepage": "https://github.com/davidochoadev/3-column-preview-card-component-solution#readme",
+  "dependencies": {
+    "simple-git": "^3.19.0"
+  }
 }
