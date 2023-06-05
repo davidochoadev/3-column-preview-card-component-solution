@@ -10,9 +10,6 @@
    --imageSize: 105px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
-
 * {
    margin: 0;
    padding: 0;
@@ -39,7 +36,18 @@ body {
    margin-bottom: 3em;
    display: grid;
    grid-template-rows: 1fr 1fr 1fr;
-}  /* ================================================================= */
+   }  
+
+.visually__hidden {
+   clip: rect(0 0 0 0);
+   clip-path: inset(50%);
+   height: 1px;
+   overflow: hidden;
+   position: absolute;
+   white-space: nowrap;
+   width: 1px;
+   }
+   /* ================================================================= */
    /* 
       GENERAL SETTINGS
    */
