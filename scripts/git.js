@@ -29,7 +29,7 @@ async function autoCommitFunc() {
    await git.add(".");
    await git.commit(`${messagePrefix}: ${message}`);
    await git.push("origin", "main");
-   console.log(chalk.blue(consoleMessage));
+   console.log(chalk.green(consoleMessage));
 }
 
 autoCommitFunc();
