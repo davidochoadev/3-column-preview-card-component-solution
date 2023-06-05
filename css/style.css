@@ -7,6 +7,7 @@
    --very-light-gray: hsl(0, 0%, 95%);
    --white: #ffffff;
    --shadow: 0px .1em .9em .1em rgba(0,0,0,0.1);
+   --imageSize: 105px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
@@ -29,13 +30,82 @@ body {
    text-rendering: optimizeSpeed;
    font-family: 'Lexend Deca', sans-serif;
 }
+/* ================================================================= */
 /*
    MAIN SECTION
 */
-.title {
-   font-family: 'Big Shoulders Display', cursive;
-   text-transform: uppercase;
+.main__container {
+   margin: 1em;
+   margin-bottom: 3em;
+   display: grid;
+   grid-template-rows: 1fr 1fr 1fr;
+}  /* ================================================================= */
+   /* 
+      GENERAL SETTINGS
+   */
+   .section {
+      width: 100%;
+      padding: 1.5em;
+   }
+   .svg-container {
+      width: min-content;
+      padding: .5em;
+   }
+   .svg-element {
+      aspect-ratio: 1/1;
+   }
+   .title {
+      font-family: 'Big Shoulders Display', cursive;
+      text-transform: uppercase;
+      padding: .5em;
+      font-size: 1.75rem;
+   }
+   .description {
+      padding: 1em;
+   }
+   .button {
+      margin: 1em;
+      padding: .8em 2.5em;
+      border: none;
+      border-radius: 2em;
+      font-family: 'Lexend Deca', sans-serif;
+      transition-duration: .3s;
+      cursor: pointer;
+   }
+   /* ================================================================= */
+.section__sedans {
+   border-radius: .5em .5em 0 0;
+   background-color: var(--bright-orange);
 }
+.sedans__button {
+   color: var(--bright-orange);
+}
+.sedans__button:hover {
+   background-color: var(--transparent-white);
+}
+.section__suvs {
+   background-color: var(--dark-cyan);
+}
+.suvs__button {
+   color: var(--dark-cyan);
+}
+.suvs__button:hover {
+   background-color: var(--transparent-white);
+}
+.section__luxury {
+   border-radius: 0 0 .5em .5em;
+   background-color: var(--very-dark-cyan);
+}
+.luxury__button {
+   color: var(--very-dark-cyan);
+}
+.luxury__button:hover {
+   background-color: var(--transparent-white);
+}
+
+/* ================================================================= */
+
+/* ================================================================= */
 /* 
    FOOTER SECTION
 */
@@ -43,10 +113,11 @@ body {
 .author__section{
    position: fixed;
    bottom: 0;
-   padding-bottom: 15px;
+   padding: .6em;
    z-index: 1;
    width: 100%;
    text-align: center;
+   background-color: var(--transparent-white);
 }
 .author__section > * {
    color: var(--dark-cyan);
@@ -62,3 +133,4 @@ body {
 .author__section > .author__anchor:hover {
    color: var(--very-dark-cyan);
 }
+/* ================================================================= */
