@@ -4,7 +4,7 @@ const git = simpleGit.default();
 async function main(message) {
    await git.add(".");
    await git.commit(`⚙️Fix: ${message}`);
-   await git.push(main);
+   await git.push("main");
 }
 
 // logs "test-branch"
