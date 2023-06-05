@@ -1,0 +1,23 @@
+{
+  "name": "3-column-preview-card-component-main",
+  "version": "1.0.0",
+  "description": "Simple column preview card component",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidochoadev/3-column-preview-card-component-solution.git"
+  },
+  "keywords": [
+    "Card",
+    "Component"
+  ],
+  "author": "davidochoa.dev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidochoadev/3-column-preview-card-component-solution/issues"
+  },
+  "homepage": "https://github.com/davidochoadev/3-column-preview-card-component-solution#readme"
+}
