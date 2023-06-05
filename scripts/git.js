@@ -1,34 +1,27 @@
 const simpleGit = require("simple-git");
 const git = simpleGit.default();
 
-async function main() {
+async function autoCommitFunc() {
    const message = process.argv.slice(4).join(" ") || "General Edits on Current Branch";
-/*    await git.add(".");
-   await git.commit(`🛠 Fix: ${message}`);
-   await git.push("origin","main"); */
 
    switch(process.argv.slice(2)[0]){
       case 'fix':
-         await git.add(".");
-         await git.commit(`🛠 Fix: ${message}`);
-         await git.push("origin","main");
+         messagePrefix = "🛠 Fix";
          break;
       case 'feat':
-         await git.add(".");
-         await git.commit(`✅ Feat: ${message}`);
-         await git.push("origin","main");
+         messagePrefix = "✅ Feat";
          break;
       case 'refactoring':
-         await git.add(".");
-         await git.commit(`✏️ Refactoring: ${message}`);
-         await git.push("origin","main");
+         messagePrefix = "✏️ Refactoring";
          break;
       default:
-         await git.add(".");
-         await git.commit(`🤖 Automatic commit: ${message}`);
-         await git.push("origin","main");
+         messagePrefix = "🤖 Automatic commit";
    }
+
+   await git.add(".");
+   await git.commit(`${messagePrefix}: ${message}`);
+   await git.push("origin", "main");
+   console.log(chalk.blue('Commit Successful'));
 }
 
-// logs "test-branch"
-main();
+autoCommitFunc();
