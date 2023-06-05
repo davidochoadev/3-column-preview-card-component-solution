@@ -23,6 +23,10 @@ async function main() {
          await git.commit(`✏️ Refactoring: ${message}`);
          await git.push("origin","main");
          break;
+      default:
+         await git.add(".");
+         await git.commit(`🤖 Automatic commit: ${message}`);
+         await git.push("origin","main");
    }
 }
 
