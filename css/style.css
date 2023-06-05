@@ -147,7 +147,7 @@ body {
    .main__container {
       grid-template-rows: 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-      max-width: 70%;
+      max-width: 60%;
    }
    .section {
       padding: 2em;
