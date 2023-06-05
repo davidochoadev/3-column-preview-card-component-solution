@@ -2,13 +2,10 @@ const simpleGit = require("simple-git");
 const git = simpleGit.default();
 
 async function main() {
-   const message = process.argv.slice(4).join(" ") || "Fixing current branch";
+   const message = process.argv.slice(4).join(" ") || "General Edits on Current Branch";
 /*    await git.add(".");
    await git.commit(`🛠 Fix: ${message}`);
    await git.push("origin","main"); */
-   if(process.argv.slice(2)[0] === 'fix'){
-      console.log(process.argv.slice(4).join(" "));
-   }
 
    switch(process.argv.slice(2)[0]){
       case 'fix':
