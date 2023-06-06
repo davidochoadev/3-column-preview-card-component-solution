@@ -58,6 +58,8 @@ body {
    .section {
       width: 100%;
       padding: 1.5em;
+      padding-bottom: 4rem;
+      padding-top: 3rem;
    }
    .svg-container {
       width: min-content;
@@ -73,16 +75,19 @@ body {
       font-size: 1.75rem;
    }
    .description {
-      padding: 1em;
+      padding: 1rem;
+      line-height: 1.8rem;
+      padding-bottom:2.5rem;
    }
    .button {
-      margin: 1em;
+      margin: 1rem;
       padding: .8em 2.5em;
       border: none;
       border-radius: 2em;
       font-family: 'Lexend Deca', sans-serif;
       transition-duration: .3s;
       cursor: pointer;
+      background-color: var(--white);
    }
    /* ================================================================= */
 .section__sedans {
